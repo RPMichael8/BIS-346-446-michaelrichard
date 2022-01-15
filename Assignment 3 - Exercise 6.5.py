@@ -7,9 +7,9 @@ Created on Fri Jan 14 18:35:27 2022
 
 # declare sentence variable to hold the sentence from which to identify 
 # duplicate words
-sentence = "This is a very long and very wordy run-on sentence which will allow \
+sentence = "This is a very long and very wordy run on sentence which will allow \
                 us to test out this script which will determine if there is \
-                duplicate words and list those words if they are duplicate words."
+                duplicate words and list those words if they are duplicate words"
 
 # initialize a word_counts dictionary
 word_counts = {}

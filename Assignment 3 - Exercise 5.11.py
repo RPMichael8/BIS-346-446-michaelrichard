@@ -48,8 +48,9 @@ def summarize_letters(string):
     
 # string from which you want to generate a list of letters
 # test strings
-string = "abcdefghijklmnopqrstuvwxyz"
+#string = "abcdefghijklmnopqrstuvwxyz"
 #string = "abcdeffghijk lmnopqrs tuvwx,yz"
+string = "abcdeffghijk lmnopqrs tuvwx,yz'abc..lmn"
 #string = "Richard Michael"
 
 # list of tuples showing count of letter occurences

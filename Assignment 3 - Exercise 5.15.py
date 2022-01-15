@@ -18,11 +18,13 @@ invoices = [(83, "Electric sander", 7, 57.98),
 from operator import itemgetter
 
 # print the sorted tuple
+print("Part A - Print the tuples sorted by part description")
 print(sorted(invoices, key=itemgetter(1)))
 
 # b) sort the tuples by price
 
 # print the sorted tuple
+print("Part B- Print the tuples sorted by price")
 print(sorted(invoices, key=itemgetter(3)))
 
 # c) map each invoice to a tuple containing part description and quantity
@@ -35,6 +37,7 @@ mapped_list = []
 mapped_list = list(map(lambda x: tuple((x[1], x[2])), invoices))
     
 # sort the result by quantity and print it
+print("Part C - Print the mapped tuple of part description and quantity sorted by quantity")
 print(sorted(mapped_list, key=itemgetter(1)))
 
 # d) map each invoice to a tuple containing part description and the value
@@ -44,12 +47,14 @@ print(sorted(mapped_list, key=itemgetter(1)))
 mapped_list = list(map(lambda x: tuple((x[1], x[2] * x[3])), invoices))
     
 # sort the result by quantity and print it
+print("Part D - Print the mapped tuple of part description and value sorted by value")
 print(sorted(mapped_list, key=itemgetter(1)))
 
 # e) modify part d to filter the results to inovice value in the range of 
 # $200 to $500
 
 # map the invoices to tuples containing part description and quantity 
+print("Part E - Print the mapped tuple of part description and value sorted by value and filtered to values between $200 and $500")
 mapped_list = list(map(lambda x: tuple((x[1], x[2] * x[3])),
                        filter(lambda x: 200 <= x[2] * x[3] <= 500, invoices)))
     
@@ -67,4 +72,4 @@ for invoice in invoices:
     total += invoice[2] * invoice[3]
 
 # print the total    
-print(total)
+print(f"Part F - The total of all invoices is ${total}")
